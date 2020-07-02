@@ -4,7 +4,10 @@
     "languages": [
         "binary"
     ],
-    "quality": 5,
+    "uses": [
+        "@python"
+    ],
+    "quality": 9,
     "scope": [
         "security"
     ],
@@ -15,10 +18,10 @@
     },
     "test": {
         "integration": [
-            {"cmd": ["pysymbolcheck-bin", "--help"], "returncode": 0}
+            {"cmd": ["pysymbolcheck", "--help"], "returncode": 0}
         ],
         "findings": [
-
+            "busybox"
         ]
     }
 }
